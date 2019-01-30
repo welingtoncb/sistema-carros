@@ -26,7 +26,7 @@
                 <p:inputText value="#{carroBean.carro.cor}"></p:inputText>
 
                 <h:outputLabel value="Ano"></h:outputLabel>
-                <p:calendar value="#{carroBean.carro.ano}" ></p:calendar>
+                <p:inputText value="#{carroBean.carro.ano}"></p:inputText>
             </p:panelGrid>
             <p:dataTable value="#{carroBean.carros}" var="carro">
                 <p:column>
@@ -42,9 +42,7 @@
                     <h:outputText value="#{carro.cor}"></h:outputText>
                 </p:column>
                 <p:column headerText="Ano" sortBy="#{carro.ano}">
-                    <h:outputText value="#{carro.ano}">
-                        <f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
-                    </h:outputText>
+                    <h:outputText value="#{carro.ano}"></h:outputText>
                 </p:column>
             </p:dataTable>
         </p:fieldset>
