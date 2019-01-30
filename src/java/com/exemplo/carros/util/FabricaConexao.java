@@ -6,10 +6,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Danilo Souza Almeida
- */
 public class FabricaConexao {
     
     private static Connection conexao;
