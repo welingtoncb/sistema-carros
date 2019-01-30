@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class FabricaConexao {
     
     private static Connection conexao;
-    private static final String URL_CONEXAO = "jdbc:mysql:192.168.159.129/sistema-carros";
+    private static final String URL_CONEXAO = "jdbc:mysql://192.168.159.129/sistema-carros";
     private static final String USUARIO = "root";
     private static final String SENHA = "123456";
 
